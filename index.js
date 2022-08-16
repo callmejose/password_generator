@@ -12,7 +12,7 @@ let pwd2El = document.getElementById("pwd2")
 let pwd1El = document.getElementById("pwd1")
 let symCheck = document.getElementById("sym-check")
 
-const lenPwd = 12
+const lenPwd = 15
 
 pwd1El.textContent = "testingtesting"
 
