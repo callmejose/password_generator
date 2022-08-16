@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="card">
+    <h1>Generate a <br><mark>random password</mark></h1>
+    <p>Never use an insecure password again.</p>
+    <div>
+      <!-- <input> -->
+      <button onclick="generatePwd()">Generate password</button>
+      <input type="checkbox" id="sym-check"> include simbols
+    </div>
+    <hr>
+    <div id="pwds" class="hidden">
+      <div class="pwd" id="pwd1">P4ssW0rd</div>
+      <div class="pwd" id="pwd2">dr0Wss4P</div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

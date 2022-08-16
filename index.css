@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Karla', sans-serif;
+  background-color: black;
+}
+
+#card {
+  margin-top: 250px;
+  width: 500px;
+  height: 350px;
+  padding: 30px 60px;
+  background: #1F2937;
+  color: white;
+  border-radius: 20px;
+}
+
+mark {
+  color: #4ADF86;
+  background-color: transparent;
+}
+
+p {
+  font-weight: 300;
+}
+
+button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #4ADF86;
+  border: none;
+  border-radius: 4px;
+}
+
+hr {
+  border: 1px solid #2F3E53;
+}
+
+#pwds {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  /* margin-left: 30px; */
+}
+
+.pwd {
+  color: #4ADF86;
+  background-color: #273549;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.pwd:hover{
+  background-color: #374151;
+}
+
+.hidden {
+  visibility: hidden;
+}
