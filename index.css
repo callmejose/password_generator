@@ -1,9 +1,30 @@
 body {
+  --background-color: black;
+  --background-card: #1F2937;
+  --font-color: white;
+  --accent-color: #4ADF86;
+  --box-color: #2F3E53;
+  --hover-color: #374151;
+  --btn-theme-bg: #FEF3C7;
+  --btn-theme-font: black;
+
   margin: 0;
   display: flex;
   justify-content: center;
   font-family: 'Karla', sans-serif;
-  background-color: black;
+  background-color: var(--background-color);
+}
+
+body.light-theme {
+  --background-color: #FEF3C7;
+  --background-card: #ECFDF5;
+  --font-color: #6B7280;
+  --btn-font-color: white;
+  --accent-color: #10B981;
+  --box-color: #D5D4D8;
+  --hover-color: #374151;
+  --btn-theme-bg: #1F2937;
+  --btn-theme-font: white;
 }
 
 #card {
@@ -11,13 +32,13 @@ body {
   width: 500px;
   height: 350px;
   padding: 30px 60px;
-  background: #1F2937;
-  color: white;
+  background: var(--background-card);
+  color: var(--font-color);
   border-radius: 20px;
 }
 
 mark {
-  color: #4ADF86;
+  color: var(--accent-color);
   background-color: transparent;
 }
 
@@ -30,14 +51,14 @@ button {
   margin-bottom: 20px;
   margin-right: 30px;
   padding: 10px 15px;
-  color: white;
-  background-color: #4ADF86;
+  color: var(--btn-font-color);
+  background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
 }
 
 hr {
-  border: 1px solid #2F3E53;
+  border: 1px solid var(--box-color);
 }
 
 #pwds {
@@ -48,16 +69,25 @@ hr {
 }
 
 .pwd {
-  color: #4ADF86;
-  background-color: #273549;
+  color: var(--accent-color);
+  background-color: var(--box-color);
   padding: 10px 15px;
   border-radius: 4px;
 }
 
 .pwd:hover{
-  background-color: #374151;
+  background-color: var(--hover-color);
 }
 
 .hidden {
   visibility: hidden;
+}
+
+#btn-toggle-theme {
+  position:fixed;
+  top: 30px;
+  right: 30px;
+  border-radius: 20px;
+  background-color: var(--btn-theme-bg);
+  color: var(--btn-theme-font);
 }

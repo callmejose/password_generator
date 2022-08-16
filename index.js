@@ -50,3 +50,11 @@ pwd2El.addEventListener('click', (event) => {
   window.alert("copied to clipboard")
 })
 
+let toggleTheme = () => {
+  let themeEl = document.getElementById("theme")
+  themeEl.textContent === "dark_mode" ?
+   themeEl.textContent = "light_mode" : themeEl.textContent = "dark_mode"
+  console.log(themeEl)
+  document.body.classList.toggle("light-theme")
+}
+
